@@ -1,6 +1,6 @@
-var phrase = (prompt('¡Hola usuario!. Ingresa una frase')).toUpperCase();//convierte frase a   mayúsculas
+var phrase = (prompt('¡Hola usuario!. Ingresa una frase')).toUpperCase();//convierte frase a mayúsculas
 
-  if(phrase === undefined || typeof phrase !== Number){
+  if(phrase === null || typeof phrase === Number){
     alert('No es un frase válida'); // No acepta números ni campos vacíos
   }
 
@@ -16,7 +16,7 @@ function cipher(phrase){
 
     }
 
-  return outputPhrase;
+  return document.write(outputPhrase);
  }
 
   cipher(phrase);//Aquí el prompt es el argumento.
